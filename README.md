@@ -31,7 +31,9 @@ https://babeljs.io/docs/en/usage
 
 module.exports = { presets };
 
-#3.  src --out-dir lib
+#3. npx babel src --out-dir lib  // i used 
+-or -
+./node_modules/.bin/babel src --out-dir lib
 
 //get a message succesfully compiled 2 files
 //2 new files in a new folder  lib appears
@@ -46,3 +48,5 @@ module.exports = { presets };
 npm install --save-dev @babel/preset-env
 
 ./node_modules/.bin/babel src --out-dir lib --presets=@babel/env
+0r--
+npx babel src --out-dir lib --presets=@babel/env  /////i used ////
